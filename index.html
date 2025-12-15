@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Resume Builder</title>
+
+  <!-- Handwritten Fonts (UI only) -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Flying Background -->
+  <canvas id="floating-bg"></canvas>
+  
+
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="app-header">
+      <h1 class="app-title">Interactive Resume Builder</h1>
+      <p class="app-subtitle">Build a clean, professional resume — visually & smartly</p>
+    </header>
+
+    <main class="app-main">
+
+      <!-- FORM -->
+      <section class="resume-form-section">
+        <h2 class="section-title">Resume Details</h2>
+
+        <form id="resume-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label>Professional Title</label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label>Summary</label>
+            <textarea></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Education</label>
+            <textarea></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Experience (optional)</label>
+            <textarea></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Skills</label>
+            <textarea placeholder="Shift+Enter for points"></textarea>
+          </div>
+        </form>
+      </section>
+
+      <!-- PREVIEW -->
+      <section class="resume-preview-section">
+        <button id="export-pdf-btn">Export as PDF</button>
+
+        <div class="resume-preview">
+          <h2 class="preview-name">Your Name</h2>
+          <p class="preview-title"></p>
+
+          <div class="preview-block">
+            <h4>Summary</h4>
+            <div class="content"></div>
+          </div>
+
+          <div class="preview-block">
+            <h4>Education</h4>
+            <div class="content"></div>
+          </div>
+
+          <div class="preview-block">
+            <h4>Experience</h4>
+            <div class="content"></div>
+          </div>
+
+          <div class="preview-block">
+            <h4>Skills</h4>
+            <div class="content"></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

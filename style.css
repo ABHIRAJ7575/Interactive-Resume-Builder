@@ -1,0 +1,157 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Kalam', cursive;
+    background: #0e0e12;
+    color: #eaeaf0;
+  }
+  
+  /* BACKGROUND */
+  #floating-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+  }
+  
+  /* LAYOUT */
+  .app-container {
+    position: relative;
+    z-index: 2;
+    padding: 2rem 4vw;
+    min-height: 100vh;
+  }
+  
+  .app-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .app-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    background: linear-gradient(120deg, #ffb703, #6fd6ff, #ffafcc, #cdb4db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .app-subtitle {
+    opacity: 0.85;
+  }
+  
+  .app-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* FORM */
+  .resume-form-section {
+    background: rgba(255,255,255,0.05);
+    padding: 1.6rem;
+    border-radius: 16px;
+  }
+  
+  .section-title {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background: rgba(255,255,255,0.08);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem;
+    color: #fff;
+    font-family: inherit;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 70px;
+  }
+  
+  /* PREVIEW */
+  .resume-preview-section {
+    background: linear-gradient(145deg, #1e1f26, #2a2c35);
+    padding: 1.6rem;
+    border-radius: 16px;
+  }
+  
+  #export-pdf-btn {
+    margin-bottom: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .preview-name {
+    font-size: 2.2rem;
+  }
+  
+  .preview-title {
+    margin-bottom: 0.8rem;
+    opacity: 0.85;
+  }
+  
+  .preview-block {
+    margin-top: 1rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(255,255,255,0.25);
+  }
+  
+  .preview-block ul {
+    padding-left: 1.2rem;
+  }
+  
+  /* PRINT (A4 CLEAN) */
+  @media print {
+  
+    body {
+      background: white;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    canvas,
+    .resume-form-section,
+    .app-header,
+    #export-pdf-btn {
+      display: none !important;
+    }
+  
+    .resume-preview-section {
+      background: none;
+      padding: 0;
+    }
+  
+    .preview-name {
+      font-size: 26px;
+    }
+  
+    .preview-block {
+      border-top: 1px solid black;
+    }
+  
+    .preview-block li {
+      font-size: 12px;
+    }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .app-main {
+      grid-template-columns: 1fr;
+    }
+  }
