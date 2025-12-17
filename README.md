@@ -1,5 +1,5 @@
+## Interactive Resume Builder ##
 <img width="1898" height="920" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/c7977385-886e-4850-81a7-d9c40ecae2dd" />
-# Interactive Resume Builder
 
 A clean, modern, and beginner-friendly **Interactive Resume Builder** built using **HTML, CSS, and Vanilla JavaScript**.  
 It allows users to create a professional resume with real-time preview and export it as a **print-perfect A4 PDF**, without using any backend or external libraries.
