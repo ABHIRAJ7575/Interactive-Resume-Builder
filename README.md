@@ -7,8 +7,11 @@ It allows users to create a professional resume with real-time preview and expor
 This project is designed to be **useful for freshers as well as professionals**, not just as a portfolio demo.
 
 ---
+##  Demo
 
-## ✨ Features
+**Live Preview:** [View Demo](#) _(https://abhiraj7575.github.io/Interactive-Resume-Builder/)_
+
+##  Features
 
 - 📝 **Live Resume Preview**  
   See changes instantly while typing.
